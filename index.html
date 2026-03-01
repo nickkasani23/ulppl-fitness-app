@@ -1291,7 +1291,7 @@
                     }
                 }
 
-                if (dataPoints.length === 0) continue;
+                if (dataPoints.length === 0) return;
 
                 const maxVal = Math.max(...dataPoints.map(d => d.weight)) || 1;
                 html += `
